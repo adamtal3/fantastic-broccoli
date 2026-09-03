@@ -1,0 +1,22 @@
+{
+  "name": "React Exercise",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  // Runs while the Codespace is still being created, so the candidate never
+  // waits at a terminal prompt. Falls back to `install` if the lockfile and
+  // package.json ever drift apart.
+  "postCreateCommand": "npm ci || npm install",
+
+  // Opening the Codespace is meant to be the only step: this starts the dev
+  // server and the preview opens by itself. Delete this line if you would
+  // rather watch them run `npm run dev` themselves.
+  "postAttachCommand": "npm run dev",
+
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Vite dev server",
+      "onAutoForward": "openPreview"
+    }
+  }
+}

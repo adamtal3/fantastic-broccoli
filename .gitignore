@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vite/
+*.log
+
+# Vite writes this while loading vite.config.js and normally deletes it again;
+# it survives if the dev server is killed abruptly.
+vite.config.js.timestamp-*

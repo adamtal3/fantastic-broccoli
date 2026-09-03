@@ -1,0 +1,32 @@
+body {
+  padding: 0 20px;
+}
+
+#log {
+  max-height: 300px;
+  overflow: auto;
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+
+pre.json {
+  background-color: #eee;
+  height: 200px;
+  overflow-y: scroll;
+  float: left;
+  width: 30%;
+  margin-right: 2%;
+}
+
+.information {
+  color: #999;
+  font-style: italic;
+  font-size: 1.15em;
+  padding: 4px;
+}
+
+.DraftEditor-root {
+  padding: 10px;
+  border: 1px solid gray;
+}
